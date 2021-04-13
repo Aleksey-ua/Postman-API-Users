@@ -1,0 +1,101 @@
+1. doRegister
+{
+    "email": "johnsnouve@gmail.com",
+    "name": "John",
+    "password": "1"
+}
+
+{
+    "email": "mikhaelvhoo@gmail.com",
+    "name": "Mikhael",
+    "password": "2"
+}
+
+{
+    "email": "nikolaskodye@gmail.com",
+    "name": "Nikolas",
+    "password": "3"
+}
+
+------------------------------------------
+
+2. CreateCompany
+{
+  "company_name": "Stealth",
+  "company_type": "ннн",
+  "company_users": ["mikhaelvhoo@gmail.com", "nikolaskodye@gmail.com"],
+  "email_owner": "johnsnouve@gmail.com"
+}
+
+------------------------------------------
+3. CreateUserFullValidData
+
+{
+  "email": "sammyecolinse@gmail.com",
+  "name": "Sammye",
+  "tasks": [12],
+  "companies": [1334],
+  "hobby":"Stealth pilot",
+  "adres":"1600 Amphitheatre Pkwy, Mountain View, CA 94043",
+  "name1":"Sammye",
+  "surname1":"Colinse",
+  "fathername1":"Junior",
+  "cat":"Pus-Pus",
+  "dog":"Dawg",
+  "parrot":"Bibi",
+  "cavy":"Gohrdon",
+  "hamster":"Xsving",
+  "squirrel":"Crazypie",
+  "phone":"+16502530000",
+  "inn":"123456789013",
+  "gender":"m",
+  "birthday":"22.01.1989",
+  "date_start":"22.01.2020"
+}
+
+---------------------------------------
+
+4. CreateUserShortlValidData
+
+{
+  "email": "jamesirving@mail.com",
+  "name": "James",
+  "tasks": [56],
+  "companies": [1334]
+}
+
+--------------------------------------
+
+5. CreateUserWithTasks
+
+{
+ "email": "chenihcrue@mail.com",
+ "name": "Chenih",
+ "tasks": [{
+   "title": "2",
+   "description": "2"
+  },
+  {
+   "title": "3",
+   "description": "3"
+  }
+ ],
+ "companies": [1334],
+ "hobby":"Rocket Science",
+  "adres":"4120 Network Cir, Santa Clara, CA 95054",
+  "name1":"Chenih",
+  "surname1":"Crue",
+  "fathername1":"Junior",
+  "cat":"Pifie",
+  "dog":"Gboy",
+  "parrot":"Carrot",
+  "cavy":"Sallie",
+  "hamster":"Clay",
+  "squirrel":"Tess",
+  "phone":"+14082760000",
+  "inn":"123456789014",
+  "gender":"m",
+  "birthday":"01.01.1987",
+  "date_start":"11.11.2000"
+}
+

@@ -1,0 +1,467 @@
+{
+	"info": {
+		"_postman_id": "fd9ef77d-d557-4a6e-8315-413bc77a4dcd",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "doRegister",
+			"item": [
+				{
+					"name": "1 user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"johnsnouve@gmail.com\",\r\n    \"name\": \"John\",\r\n    \"password\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mikhaelvhoo@gmail.com\",\r\n    \"name\": \"Mikhael\",\r\n    \"password\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3 user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"nikolaskodye@gmail.com\",\r\n    \"name\": \"Nikolas\",\r\n    \"password\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "doLogin",
+			"item": [
+				{
+					"name": "doLogin1User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"johnsnouve@gmail.com\",\r\n    \"password\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/dologin",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"dologin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "doLogin2User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mikhaelvhoo@gmail.com\",\r\n    \"password\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/dologin",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"dologin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "doLogin3User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"nikolaskodye@gmail.com\",\r\n    \"password\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/dologin",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"dologin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CreateCompany",
+			"item": [
+				{
+					"name": "New Compaany",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"company_name\": \"Stealth\",\r\n  \"company_type\": \"ООО\",\r\n  \"company_users\": [\"mikhaelvhoo@gmail.com\", \"nikolaskodye@gmail.com\"],\r\n  \"email_owner\": \"johnsnouve@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/createcompany",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"createcompany"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CreateUser",
+			"item": [
+				{
+					"name": "FullValidData",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"sammyecolinse@gmail.com\",\r\n  \"name\": \"Sammye\",\r\n  \"tasks\": [12],\r\n  \"companies\": [1334],\r\n  \"hobby\":\"Stealth pilot\",\r\n  \"adres\":\"1600 Amphitheatre Pkwy, Mountain View, CA 94043\",\r\n  \"name1\":\"Sammye\",\r\n  \"surname1\":\"Colinse\",\r\n  \"fathername1\":\"Junior\",\r\n  \"cat\":\"Pus-Pus\",\r\n  \"dog\":\"Dawg\",\r\n  \"parrot\":\"Bibi\",\r\n  \"cavy\":\"Gohrdon\",\r\n  \"hamster\":\"Xsving\",\r\n  \"squirrel\":\"Crazypie\",\r\n  \"phone\":\"+16502530000\",\r\n  \"inn\":\"123456789013\",\r\n  \"gender\":\"m\",\r\n  \"birthday\":\"22.01.1989\",\r\n  \"date_start\":\"22.01.2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/createuser",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"createuser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShortlValidData",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"jamesirving@mail.com\",\r\n  \"name\": \"James\",\r\n  \"tasks\": [56],\r\n  \"companies\": [1334]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/createuser",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"createuser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CreateUserWithTasks",
+			"item": [
+				{
+					"name": "FullValidData",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"email\": \"chenihcrue@mail.com\",\r\n \"name\": \"Chenih\",\r\n \"tasks\": [{\r\n   \"title\": \"2\",\r\n   \"description\": \"2\"\r\n  },\r\n  {\r\n   \"title\": \"3\",\r\n   \"description\": \"3\"\r\n  }\r\n ],\r\n \"companies\": [1334],\r\n \"hobby\":\"Rocket Science\",\r\n  \"adres\":\"4120 Network Cir, Santa Clara, CA 95054\",\r\n  \"name1\":\"Chenih\",\r\n  \"surname1\":\"Crue\",\r\n  \"fathername1\":\"Junior\",\r\n  \"cat\":\"Pifie\",\r\n  \"dog\":\"Gboy\",\r\n  \"parrot\":\"Carrot\",\r\n  \"cavy\":\"Sallie\",\r\n  \"hamster\":\"Clay\",\r\n  \"squirrel\":\"Tess\",\r\n  \"phone\":\"+14082760000\",\r\n  \"inn\":\"123456789014\",\r\n  \"gender\":\"m\",\r\n  \"birthday\":\"01.01.1987\",\r\n  \"date_start\":\"11.11.2000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/createuserwithtasks",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"createuserwithtasks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Add/DeleteAvatar",
+			"item": [
+				{
+					"name": "AddAvatar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "johnsnouve@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/C:/Users/User/Desktop/1/ddddd.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/addavatar",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"addavatar"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAvater",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "johnsnouve@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/deleteavatar",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"deleteavatar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CompanySerch",
+			"item": [
+				{
+					"name": "StealthSearch",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/magicsearch?query=Stealth",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"magicsearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "Stealth"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
